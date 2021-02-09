@@ -50,7 +50,6 @@ function Pomodoro() {
 
   function timerExpired() {
     if (!onBreak) {
-      //will change
       new Audio(`https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-27787/zapsplat_bell_medium_large_soft_hit_chime_001_29436.mp3?_=1`).play();
       setOnBreak((state) => (state = true));
       setTimerProgress((progress) => (progress = 0));
